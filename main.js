@@ -7,6 +7,13 @@ let logoA = document.querySelector(`#logoA`);
 
 let logoB = document.querySelector(`#logoB`);
 
+let test = document.querySelector(`#test`);
+
+let firstSpan = document.querySelector(`#first-span`);
+let secondSpan = document.querySelector(`#second-span`);
+let terzoSpan = document.querySelector(`#terzo-span`);
+
+
 let confirm = false;
 
 navIcon.addEventListener(`click`, ()=>{
@@ -25,16 +32,34 @@ navIcon.addEventListener(`click`, ()=>{
 window.addEventListener(`scroll`, ()=>{
 
     if(window.scrollY > 0){
-        navbar.style.backgroundColor = `var(--light)`;
+        navbar.style.backgroundColor = `rgba(84, 11, 13, 0.556)`;
         navbar.style.padding = `10px`;
         logoA.classList.add(`d-none`);
         logoB.classList.remove(`d-none`);
-
+        navIcon.style.color = `var(--autunno)`
     } else {
-        navbar.style.backgroundColor = `transparent`;
+        navbar.style.backgroundColor =`rgba(246, 189, 96, 0.733)`;
         navbar.style.padding = `0px`;
         logoB.classList.add(`d-none`);
         logoA.classList.remove(`d-none`);
+        navIcon.style.color = `var(--bordeux)`
     }
     
 });
+
+function createInterval(finalNumber, elemento){
+
+    let counter = 0;
+    let interval = setInterval(()=>{
+       
+        if(counter < finalNumber){
+            counter++
+            elemento.innerHTML = counter;
+        
+        } else {
+            clearInterval(interval);
+
+        }
+    },1);
+
+}

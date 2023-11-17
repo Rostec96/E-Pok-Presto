@@ -22,7 +22,7 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navJs">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navJs" data-aos="fade-down">
         <div class="container-fluid">
           <a href="" class="navbar-brand" href="#" id="logoA">
             <img class="logoSalvia" src="./media/bordeuxlogo.png" alt="logoA">
@@ -31,15 +31,15 @@
             <img class="logoBordaux" src="./media/yellowlogo.png" alt="logoB">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-hand-point-up fa-2x" style="color: #540b0e;" id="navIcon"></i>
+            <i class="fa-solid fa-hand-point-up fa-2x" id="navIcon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold ">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Annunci</a>
+                <a class="nav-link text-light" aria-current="page" href="#">Annunci</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Chi siamo?</a>
+                <a class="nav-link text-light" href="#">Chi siamo?</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -55,18 +55,37 @@
         <div class="row">
             <div class="col-12 ">
                 <video autoplay muted loop id="myvideo">
-                    <source src="./media/header.mp4" type="video/mp4">
+                    <source src="./media/shopvideo.mp4" type="video/mp4">
                 </video>
                 <div class="row vh-100">
                     <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-bordeux">e-Presto</h1>
-                        <h2 class="fw-bold">Prima di subito</h2>
-                        <button class="btn-cus">Cerca prodotti</button>
+                        <h1 class="text-bordeux" data-aos="flip-left">e-Presto</h1>
+                        <h2 class="fw-bold" data-aos="fade-left">Prima di subito</h2>
+                        <button class="btn-cus" data-aos="zoom-in">Cerca prodotti</button>
                     </div>
                 </div>
             </div>
         
         </div>
+    </section>
+
+    <!--main-->
+    <section class="container my-5 py-5">
+      <div class="row">
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right">
+          <img class="img-cus" src="./media/shop.jpg" alt="shopper" id="imgTest">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2 id="test">Un po' di numeri</h2>
+
+          <p class="lead text-salvia"> <span id="first-span" class="increment-numbers">0</span> Clienti soddisfatti</p>
+          <p class="lead text-salvia"> <span id="second-span" class="increment-numbers">0</span> Prodotti venduti</p>
+          <p class="lead text-salvia"> <span id="terzo-span" class="increment-numbers">0</span> Recensioni</p>
+        </div>
+
+      </div>
     </section>
     
     

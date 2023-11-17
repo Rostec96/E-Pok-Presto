@@ -93,12 +93,17 @@ h2,h3,h4,h5{
 
 /*navbar*/
 
+.navbar{
+    background: rgba(246, 189, 96, 0.733);
+}
+
 #navJs{
     transition: 0.4s;
 }
 
 #navIcon{
     transition: 0.4s;
+    color: var(--bordeux);
 
 }
 
@@ -107,8 +112,9 @@ h2,h3,h4,h5{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    
     position: absolute;
-    top: 0;
+    top: 4;
     right: 0;
     z-index: -1;
 }
@@ -159,4 +165,25 @@ h2,h3,h4,h5{
 
 .logoBordaux{
     width: 40px;
+}
+
+/*main*/
+
+.img-cus{
+    border-radius: 100%;
+    background-color: var(--autunno);
+    background-size: cover;
+    width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+    .img-cus{
+        width: 300px;
+    }    
+}
+
+.increment-numbers{
+    font-size: 50px;
+    color: var(--salvia);
+    font-weight: 700;
 }
