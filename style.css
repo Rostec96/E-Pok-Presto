@@ -6,6 +6,10 @@
     --autunno: #F6BD60;
 }
 
+body{
+    background: var(--salvia);
+}
+
 @font-face {
     font-family: titolo;
     src: url(./media/Blue\ Style.ttf);
@@ -17,7 +21,13 @@ h1{
     font-size: 80px;
 }
 
-h2,h3,h4,h5{
+h2{
+    font-family: 'Glass Antiqua', cursive;
+    text-shadow: 2px 2px var(--cipria);
+
+}
+
+h3,h4,h5{
     font-family: 'Glass Antiqua', cursive;
 }
 
@@ -112,9 +122,8 @@ h2,h3,h4,h5{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    
     position: absolute;
-    top: 4;
+    top: 0;
     right: 0;
     z-index: -1;
 }
@@ -173,17 +182,17 @@ h2,h3,h4,h5{
     border-radius: 100%;
     background-color: var(--autunno);
     background-size: cover;
-    width: 500px;
+    width: 400px;
 }
 
 @media screen and (max-width: 900px) {
     .img-cus{
-        width: 300px;
+        width: 200px;
     }    
 }
 
 .increment-numbers{
     font-size: 50px;
-    color: var(--salvia);
+    color: var(--bordeux);
     font-weight: 700;
 }

@@ -1,7 +1,8 @@
 let navbar = document.querySelector(`#navJs`);
 
-let navIcon = document.querySelector(`#navIcon`);
+let intersectTitle = document.querySelector(`#intersectTitle`);
 
+let navIcon = document.querySelector(`#navIcon`);
 
 let logoA = document.querySelector(`#logoA`);
 
@@ -13,6 +14,7 @@ let firstSpan = document.querySelector(`#first-span`);
 let secondSpan = document.querySelector(`#second-span`);
 let terzoSpan = document.querySelector(`#terzo-span`);
 
+let check = false;
 
 let confirm = false;
 
@@ -27,7 +29,6 @@ navIcon.addEventListener(`click`, ()=>{
     }
 
 });
-
 
 window.addEventListener(`scroll`, ()=>{
 
@@ -60,6 +61,20 @@ function createInterval(finalNumber, elemento){
             clearInterval(interval);
 
         }
-    },1);
+    },5);
 
 }
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting && check == false){
+            createInterval(47, firstSpan);
+            createInterval(200, secondSpan);
+            createInterval(21, terzoSpan);
+            
+            check = true;
+        }
+    });
+});
+
+observer.observe(intersectTitle);
