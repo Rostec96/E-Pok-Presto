@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-Commerce PRESTO</title>
+    <link rel="shortcut icon" href="./media/shopfavicon.png" type="image/x-icon">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -15,10 +20,57 @@
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navJs">
+        <div class="container-fluid">
+          <a href="" class="navbar-brand" href="#" id="logoA">
+            <img class="logoSalvia" src="./media/bordeuxlogo.png" alt="logoA">
+          </a>
+          <a href="" class="navbar-brand d-none" href="#" id="logoB">
+            <img class="logoBordaux" src="./media/yellowlogo.png" alt="logoB">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-hand-point-up fa-2x" style="color: #540b0e;" id="navIcon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Annunci</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi siamo?</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
+              <button class="btn-cus2" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--header-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 ">
+                <video autoplay muted loop id="myvideo">
+                    <source src="./media/header.mp4" type="video/mp4">
+                </video>
+                <div class="row vh-100">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="text-bordeux">e-Presto</h1>
+                        <h2 class="fw-bold">Prima di subito</h2>
+                        <button class="btn-cus">Cerca prodotti</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
     
     
-    
+    <div class="vh-100"></div>
 
 
 

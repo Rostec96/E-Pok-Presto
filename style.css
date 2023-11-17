@@ -1,0 +1,162 @@
+:root{
+    --light: #F7EDE2;
+    --salvia: #84A59D;
+    --cipria: #F5CAC3;
+    --bordeux: #540b0e;
+    --autunno: #F6BD60;
+}
+
+@font-face {
+    font-family: titolo;
+    src: url(./media/Blue\ Style.ttf);
+}
+
+h1{
+    font-family: titolo;
+    text-shadow: 2px 2px var(--cipria);
+    font-size: 80px;
+}
+
+h2,h3,h4,h5{
+    font-family: 'Glass Antiqua', cursive;
+}
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/*testi*/
+
+.text-light{
+    color: var(--light);
+}
+
+.text-salvia{
+    color: var(--salvia);
+}
+
+.text-cipria{
+    color: var(--cipria);
+}
+
+.text-bordeux{
+    color: var(--bordeux);
+}
+
+.text-autunno{
+    color: var(--autunno);
+}
+
+/*bg*/
+
+.bg-light{
+    background-color: var(--light);
+}
+
+.bg-salvia{
+    background-color: var(--salvia);
+}
+
+.bg-cipria{
+    background-color: var(--cipria);
+}
+
+.bg-bordeux{
+    background-color: var(--bordeux);
+}
+
+.bg-autunno{
+    background-color: var(--autunno);
+}
+
+/*bordi*/
+
+.border-light{
+    border: 2px solid var(--light);
+}
+
+.border-salvia{
+    border: 2px solid var(--salvia);
+}
+
+.border-cipria{
+    border: 2px solid var(--cipria);
+}
+
+.border-bordeux{
+    border: 2px solid var(--bordeux);
+}
+
+.border-autunno{
+    border: 2px solid var(--autunno);
+}
+
+/*navbar*/
+
+#navJs{
+    transition: 0.4s;
+}
+
+#navIcon{
+    transition: 0.4s;
+
+}
+
+/*header*/
+#myvideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.btn-cus{
+    background-color: var(--cipria);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 5px double var(--bordeux);
+    font-size: large;
+    color: var(--bordeux);
+    transition: 0.4s;
+}
+
+.btn-cus:hover{
+    background-color: var(--bordeux);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 5px double var(--cipria);
+    font-size: large;
+    color: var(--cipria);
+}
+
+.btn-cus2{
+    background-color: var(--cipria);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 8px double var(--bordeux);
+    color: var(--bordeux);
+    transition: 0.4s;
+}
+
+.btn-cus2:hover{
+    background-color: var(--bordeux);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 8px double var(--cipria);
+    color: var(--cipria);
+}
+
+.logoSalvia{
+    width: 40px;
+}
+
+.logoBordaux{
+    width: 40px;
+}
