@@ -178,6 +178,27 @@ h3,h4,h5{
 
 /*main*/
 
+.category-card{
+    border: double 10px var(--cipria);
+    border-radius: 50px;
+}
+
+.border-dashed{
+    border: dashed 4px var(--cipria);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background: url(./media/cardwr.png);
+    background-size: cover;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .img-cus{
     border-radius: 100%;
     background-color: var(--autunno);
@@ -195,4 +216,49 @@ h3,h4,h5{
     font-size: 50px;
     color: var(--bordeux);
     font-weight: 700;
+}
+
+
+.swiper {
+    height: 400px;
+  }
+
+.card-cus-sw{
+    height: 200px;
+    width: 300px;
+    border: 5px solid var(--cipria);
+    background-color: var(--autunno);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.col-cus-trans{
+    border: 3px solid var(--cipria);
+    color: var(--cipria);
+    padding: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.col-cus-trans:hover{
+    border: 3px solid var(--bordeux);
+    color: var(--bordeux);
+    padding: 20px;
+    transform: scale(1.2);
+}
+
+/*per annunci e chi siamo*/
+.header-img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
