@@ -41,4 +41,142 @@ window.addEventListener(`scroll`, ()=>{
 });
 
 
+fetch(`./annunci.json`).then((response)=> response.json()).then((data)=>{
+    
+    let categoryWrapper = document.querySelector(`#categoryWrapper`);
+    
+    let cardsWrapper = document.querySelector(`#cardsWrapper`);
+    
+    function setCategoryFilter() {
+        let categories = data.map((annuncio)=> annuncio.category);
+        
+        let uniqueCategories = [];
+        
+        categories.forEach((categoria) => {
+            
+            if (!uniqueCategories.includes(categoria)) {
+                uniqueCategories.push(categoria);
+            }
+            
+        });
+        
+        uniqueCategories.forEach((category)=>{
+            let div = document.createElement(`div`);
+            
+            div.classList.add(`form-check`);
+            
+            div.innerHTML = `
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="${category}">
+            <label class="form-check-label" for="${category}">
+            ${category}
+            </label>
+            `;
+            
+            categoryWrapper.appendChild(div);
+        })
+    }
+    
+    setCategoryFilter();
+    
+    function showCards(array) {
+        cardsWrapper.innerHTML = ``;
+
+        array.sort((a, b)=> b.price - a.price);
+        
+        array.forEach((annuncio, i)=>{
+            
+            let div = document.createElement(`div`);
+            
+            div.classList.add(`col-12`, `col-md-3`);
+            
+            div.innerHTML = `
+                <div class="announcement-card text-center">
+                <div class="card-head">
+                    <img class="img-card-Cus" src="https://lorempokemon.fakerapi.it/pokemon/${200+1}" alt="">
+                    <h4>${annuncio.name}</h4>
+                    <h5>${annuncio.category}</h5>
+                    <p class="fw-bold">${annuncio.price} £</p>
+                </div>
+            `;
+            
+            cardsWrapper.appendChild(div);
+            
+        });
+        
+    }
+
+    showCards(data);
+
+
+    function filterByCategory(categoria) {
+
+        if (categoria != `allShop`) {
+            let filtered = data.filter((annuncio)=>{
+                return annuncio.category == categoria;
+            });
+            
+            showCards(filtered);
+        } else {
+            showCards(data);
+        }
+        
+    }
+    
+    let checkInputs = document.querySelectorAll('.form-check-input');
+
+    checkInputs.forEach((radio)=>{
+        radio.addEventListener(`click`, ()=>{
+            filterByCategory(radio.id);
+        })
+    })
+
+    let priceInput =document.querySelector(`#priceInput`);
+
+    let incrementNumber = document.querySelector(`#incrementNumber`);
+
+    function setPriceInput() {
+        let prices = data.map((annuncio)=> Number(annuncio.price));
+
+        let maxPrice = (Math.max(...prices));
+
+        priceInput.max = Math.ceil(maxPrice);
+
+        priceInput.value = Math.ceil(maxPrice);
+
+        incrementNumber.innerHTML = Math.ceil(maxPrice);
+        
+    }
+
+    setPriceInput();
+
+    function filterByPrice(prezzo) {
+        let filtered = data.filter((annuncio)=> Number(annuncio.price <= prezzo));
+
+        showCards(filtered);
+        
+    }
+
+    priceInput.addEventListener(`input`, ()=>{
+        filterByPrice(Number(priceInput.value));
+
+        incrementNumber.innerHTML = priceInput.value;
+    });
+
+    let wordInput = document.querySelector(`#wordInput`);
+
+    function filterByWord(nome) {
+        let filtered = data.filter((annuncio)=> annuncio.name.toLowerCase().includes(nome.toLowerCase()));
+
+        showCards(filtered);
+
+        
+    }
+
+    wordInput.addEventListener(`input`, ()=>{
+        filterByWord(wordInput.value);
+    });
+
+});
+
+
 

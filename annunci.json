@@ -1,0 +1,353 @@
+
+
+[
+    {
+        "id":1,
+        "name": "master-ball",
+        "category": "PokèBall",
+        "price": "20"
+    },
+    
+    {
+        "id":2,
+        "name": "Ultra-Ball",
+        "category": "PokèBall",
+        "price": "25"
+    },
+    
+    {
+        "id":3,
+        "name": "Great-Ball",
+        "category": "PokèBall",
+        "price": "20.90"
+    },
+    
+    {
+        "id":4,
+        "name": "Poke-Ball",
+        "category": "PokèBall",
+        "price": "12"
+    },
+    
+    {
+        "id":5,
+        "name": "Safari-Ball",
+        "category": "PokèBall",
+        "price": "40"
+    },
+    
+    {
+        "id":6,
+        "name": "Net-Ball",
+        "category": "PokèBall",
+        "price": "45"
+    },
+    
+    {
+        "id":7,
+        "name": "Dive-Ball",
+        "category": "PokèBall",
+        "price": "42.30"
+    },
+    
+    {
+        "id":8,
+        "name": "Nest-Ball",
+        "category": "PokèBall",
+        "price": "15.50"
+    },
+    
+    {
+        "id":9,
+        "name": "Repeat-Ball",
+        "category": "PokèBall",
+        "price": "100.40"
+    },
+    
+    {
+        "id":10,
+        "name": "Timer-Ball",
+        "category": "PokèBall",
+        "price": "30.50"
+    },
+    
+    {
+        "id":11,
+        "name": "Luxury-Ball",
+        "category": "PokèBall",
+        "price": "110"
+    },
+    
+    {
+        "id":12,
+        "name": "Premier-Ball",
+        "category": "PokèBall",
+        "price": "110.20"
+    },
+    
+    {
+        "id":13,
+        "name": "Dusk-Ball",
+        "category": "PokèBall",
+        "price": "20.40"
+    },
+    
+    {
+        "id":14,
+        "name": "Heal-Ball",
+        "category": "PokèBall",
+        "price": "10"
+    },
+    
+    {
+        "id":15,
+        "name": "Quick-Ball",
+        "category": "PokèBall",
+        "price": "12.70"
+    },
+    
+    {
+        "id":16,
+        "name": "Cherish-Ball",
+        "category": "PokèBall",
+        "price": "23.70"
+    },
+    
+    {
+        "id":17,
+        "name": "Potion",
+        "category": "Salute",
+        "price": "100"
+    },
+    
+    {
+        "id":18,
+        "name": "Super-Potion",
+        "category": "Salute",
+        "price": "120"
+    },
+    
+    {
+        "id":19,
+        "name": "Iper-Potion",
+        "category": "Salute",
+        "price": "140"
+    },
+    
+    {
+        "id":20,
+        "name": "Mega-potion",
+        "category": "Salute",
+        "price": "180"
+    },
+    
+    {
+        "id":21,
+        "name": "Antidoto",
+        "category": "Salute",
+        "price": "100"
+    },
+    
+    {
+        "id":22,
+        "name": "Antiparalisi",
+        "category": "Salute",
+        "price": "120"
+    },
+    
+    {
+        "id":23,
+        "name": "Bicicletta",
+        "category": "Strumenti",
+        "price": "2000"
+    },
+    
+    {
+        "id":24,
+        "name": "Fune-Fuga",
+        "category": "Strumenti",
+        "price": "300"
+    },
+    
+    {
+        "id":25,
+        "name": "Occhiali Neri",
+        "category": "Strumenti",
+        "price": "120.10"
+    },
+    
+    {
+        "id":26,
+        "name": "Giubotto Assalto",
+        "category": "Strumenti",
+        "price": "320"
+    },
+    
+    {
+        "id":27,
+        "name": "Pokedex",
+        "category": "Strumenti",
+        "price": "10000"
+    },
+    
+    {
+        "id":28,
+        "name": "Sciarpa Blu",
+        "category": "Strumenti",
+        "price": "150.70"
+    },
+    
+    {
+        "id":29,
+        "name": "Masterizza Unità",
+        "category": "Strumenti",
+        "price": "290"
+    },
+    
+    {
+        "id":30,
+        "name": "Baccarancia",
+        "category": "Food",
+        "price": "60"
+    },
+    
+    {
+        "id":31,
+        "name": "Bacca Blu",
+        "category": "Food",
+        "price": "60"
+    },
+    
+    {
+        "id":32,
+        "name": "Ghicocca Rossa",
+        "category": "Food",
+        "price": "60"
+    },
+    
+    {
+        "id":33,
+        "name": "Grande Fungo",
+        "category": "Food",
+        "price": "20"
+    },
+    
+    {
+        "id":34,
+        "name": "Bacca Dolce",
+        "category": "Food",
+        "price": "40"
+    },
+    
+    {
+        "id":35,
+        "name": "Polvere di Stelle",
+        "category": "Rarità",
+        "price": "100000"
+    },
+    
+    {
+        "id":36,
+        "name": "Fossile",
+        "category": "Rarità",
+        "price": "1000000"
+    },
+    
+    {
+        "id":37,
+        "name": "Osso Raro",
+        "category": "Rarità",
+        "price": "100000"
+    },
+    
+    {
+        "id":38,
+        "name": "PietraLunare",
+        "category": "Rarità",
+        "price": "30000"
+    },
+    
+    {
+        "id":39,
+        "name": "PietraSolare",
+        "category": "Rarità",
+        "price": "30000"
+    },
+    
+    {
+        "id":40,
+        "name": "Dinamax",
+        "category": "Rarità",
+        "price": "1300000"
+    },
+    
+    {
+        "id":41,
+        "name": "Pistolacqua",
+        "category": "DischiMosse",
+        "price": "120"
+    },
+    
+    {
+        "id":42,
+        "name": "Terremoto",
+        "category": "DischiMosse",
+        "price": "130"
+    },
+    
+    {
+        "id":43,
+        "name": "Ossoclava",
+        "category": "DischiMosse",
+        "price": "200"
+    },
+    
+    {
+        "id":44,
+        "name": "Velenospina",
+        "category": "DischiMosse",
+        "price": "30"
+    },
+    
+    {
+        "id":45,
+        "name": "Foglielama",
+        "category": "DischiMosse",
+        "price": "230"
+    },
+    
+    {
+        "id":46,
+        "name": "Tuonoshock",
+        "category": "DischiMosse",
+        "price": "100"
+    },
+    
+    {
+        "id":47,
+        "name": "Megassorbimento",
+        "category": "DischiMosse",
+        "price": "59"
+    },
+    
+    {
+        "id":48,
+        "name": "Turbosabbia",
+        "category": "DischiMosse",
+        "price": "180"
+    },
+    
+    {
+        "id":49,
+        "name": "Facciata",
+        "category": "DischiMosse",
+        "price": "100"
+    },
+    
+    {
+        "id":50,
+        "name": "Lanciafiamme",
+        "category": "DischiMosse",
+        "price": "498"
+    }
+ ]   

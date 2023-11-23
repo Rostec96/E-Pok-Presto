@@ -28,6 +28,8 @@ navIcon.addEventListener(`click`, ()=>{
     
 });
 
+let scroller = document.querySelector(`#scroller`);
+
 window.addEventListener(`scroll`, ()=>{
     
     if(window.scrollY > 0){
@@ -35,13 +37,15 @@ window.addEventListener(`scroll`, ()=>{
         navbar.style.padding = `10px`;
         logoA.classList.add(`d-none`);
         logoB.classList.remove(`d-none`);
-        navIcon.style.color = `var(--autunno)`
+        navIcon.style.color = `var(--autunno)`;
+        scroller.classList.remove(`d-none`);
     } else {
         navbar.style.backgroundColor =`rgba(246, 189, 96, 0.733)`;
         navbar.style.padding = `0px`;
         logoB.classList.add(`d-none`);
         logoA.classList.remove(`d-none`);
-        navIcon.style.color = `var(--bordeux)`
+        navIcon.style.color = `var(--bordeux)`;
+        scroller.classList.add(`d-none`);
     }
     
 });
@@ -110,7 +114,7 @@ colsTrans.forEach((colTrans, i)=>{
 let categorie = [
     {name: `Food`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-utensils"></i>`, announcements: 1540},
     {name: `Salute`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-briefcase-medical"></i>`, announcements: 30000},
-    {name: `Oggetti`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-bicycle"></i>`, announcements: 50},
+    {name: `Strumenti`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-bicycle"></i>`, announcements: 50},
     {name: `Rarità`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-bone"></i>`, announcements: 30},
     {name: `PokèBall`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-circle"></i>`, announcements: 80},
     {name: `DischiMosse`, icon: `<i class="fa-2x fa beat-fade my-3 fa-solid fa-compact-disc"></i>`, announcements: 1000},

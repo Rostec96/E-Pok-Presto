@@ -1,200 +1,258 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Commerce PRESTO</title>
-  <!--icon favicon-->
-  <link rel="shortcut icon" href="./media/shopfavicon.png" type="image/x-icon">
-  
-  <!--AOS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--fonts-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!--bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--swiper-->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <!--CSS-->
-  <link rel="stylesheet" href="./style.css">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Commerce PRESTO</title>
+    <!--icon favicon-->
+    <link rel="shortcut icon" href="./media/shopfavicon.png" type="image/x-icon">
+    
+    
+    <!--fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
-  
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top"    id="navJs" data-aos="fade-down">
-    <div class="container-fluid">
-      <a href="" class="navbar-brand" href="./index.html" id="logoA">
-        <img class="logoSalvia" src="./media/bordeuxlogo.png" alt="logoA">
-      </a>
-      <a href="" class="navbar-brand d-none" href="./index.html" id="logoB">
-        <img class="logoBordaux" src="./media/yellowlogo.png" alt="logoB">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-hand-point-up fa-2x" id="navIcon"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold ">
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="./annunci.html">Annunci</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="./chisiamo.html">Chi siamo?</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
-          <button class="btn-cus2" type="submit">Cerca</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  
-  <!--header-->
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col-12 ">
-        <img class="header-img" src="./media/headerimg.jpg" alt="PokèLandia">
-        <div class="row vh-100">
-          <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <h1 class="text-bordeux" data-aos="flip-left">e-PokèPresto</h1>
-            <h2 class="fw-bold display-3 text-bordeux" data-aos="fade-left">Annunci</h2>
-            <button class="btn-cus" data-aos="zoom-in">Cerca prodotti</button>
-          </div>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navJs">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html" id="logoA">
+                <img class="logoSalvia" src="./media/bordeuxlogo.png" alt="logoA">
+            </a>
+            <a class="navbar-brand d-none" href="./index.html" id="logoB">
+                <img class="logoBordaux" src="./media/yellowlogo.png" alt="logoB">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-hand-point-up fa-2x" id="navIcon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold ">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="./annunci.html">Annunci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./chisiamo.html">Chi siamo?</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
+                    <button class="btn-cus2" type="submit">Cerca</button>
+                </form>
+            </div>
         </div>
-      </div>
-      
+    </nav>
+    
+    <a href="#" id="scroller" class="d-none">
+        <i class="fa-solid fa-cloud-arrow-up fa-beat fa-4x text-bordeux"></i>
+    </a>
+    <!--header-->
+    <section class="container-fluid">
+        <div class="row header-img">
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                <h1 class="text-bordeux">e-PokèPresto</h1>
+                <h2 class="fw-bold display-3 text-bordeux">Annunci</h2>
+                <button class="btn-cus">Cerca prodotti</button>
+            </div>
+        </div>
     </div>
-  </section>
-  
-  <!--main-->
-  <section class="container my-5">
-    <div class="row">
+    
+</div>
+</section>
 
-    </div>
-  </section>
-    
-    
-  <!--footer-->    
-  <footer class="text-bordeux text-center bg-autunno">
-    
-    <div class="container-fluid">      
-      
-      <div class="row pt-2">
-        
-        
-        <div class="col-12 col-md-4">
-          
-          <h5 class="mb-4 display-5 text-start">Approposito di noi</h5>
-          <p class="text-center">Voglio andare dove mi va<br>
-            E non fermarmi qua<br>
-            Questo viaggio mi porterà<br>              
-            Da tutti i Pokémon<br>              
-            Girovagando per il mondo<br>               
-            La mia sfera lancerò<br>               
-            Ed ogni Pokémon così catturerò! Oh oh!</p>
+<!--main--> 
+<section class="container-fluid">
+    <div class="row py-5">
+        <div class="col-12 col-md-3">
             
-          </div>
-          
-          <div class="col-12 col-md-5 text-center">
-            <h3 class="text-bordeux mb-3 pb-3 display-5">Quick Menù</h3>
-            <ul class="nav flex-column">
-
-              <li class="nav-item mb-3"><a href="./index.html/#categorie" class="nav-link p-0 text-dark">Categorie</a></li>
-              <li class="nav-item mb-3"><a href="./index.html/#statistiche" class="nav-link p-0 text-dark">Dicono di Noi</a></li>              
-              <li class="nav-item mb-3"><a href="./index.html/#recensione" class="nav-link p-0 text-dark">Recensioni</a></li>              
-              <li class="nav-item mb-3"><a href="./index.html/#spedizioni" class="nav-link p-0 text-dark">Spedizioni</a></li>
+            <h2 class="text-bordeux text-center">Filtra per:</h2>
+            
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h3>Categoria</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        
+                        <div class="accordion-body" id="categoryWrapper">
                             
-            </ul>
-          </div>
-          
-          <div class="col-12 col-md-3 text-end">
-            <h3 class="text-bordeux mb-3 pb-3 display-5">Contatti</h3>
-            <ul class="fa-ul">
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">PikiWiki, 94758, PokèLandia</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@mail.com</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+39 339 283 7398</span>
-              </li>
-            </ul>
-          </div>
-          
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="allShop" checked>
+                                <label class="form-check-label" for="allShop">
+                                    Tutte le categorie
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h3>Prezzo</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <input class="w-100" type="range" id="priceInput">
+                            <div class="d-flex align-items-center">
+                                <span class="inputNumber" id="incrementNumber">0</span>
+                                <i class="fa-solid fa-sterling-sign fa-2x text-autunno text-end w-100"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h3>Parola</h3>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <input type="text" placeholder="Cerca il prodotto" id="wordInput">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-9">
+                <div class="row" id="cardsWrapper">
+                    
+                </div>
+                
+            </div>
+            
+            
         </div>
         
-        <div class="row">
-          
-          <div class="col-12 col-md-6">
-            
-            <h5 class="py-2 my-3 display-5">Cerca Prodotti</h5>
-            
-            <div class="form-outline">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
-                <button class="btn-cus2" type="submit">Cerca</button>
-              </form>
-            </div>
-            
-          </div>
-          
-          <div class="col-12 col-md-6">
-            
-            <h5 class="display-5 py-2 my-3">Newsletter</h5>            
-            <div class="form-outline">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
-                <button class="btn-cus2" type="submit">Iscriviti</button>
-              </form>
-            </div>
-            
-          </div>
-          
-        </div>  
+    </section>
+    
+    
+    <!--footer-->    
+    <footer class="text-bordeux text-center bg-autunno">
         
-        <div class="row mt-3 ">
-          <div class="col-12 col-md-6  d-flex justify-content-center align-items-center">
-            <div class="mt-4">
-              <p>© 2023 Company, Inc. All rights reserved.</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-            <div class="mt-4">
-              
-              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-facebook-f"></i></a>                
-              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-twitter"></i></a>                
-              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-google-plus-g"></i></a>
-              
-            </div>
-          
-        </div>
-        
-    </div>     
-      
-  </footer>
-    
-    <!--swiper-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script>
-      AOS.init();
-    </script>
-    
-    <!--JavaScript-->
-    <script src="./main.js"></script>
-    
-  </body>
-  </html>
+        <div class="container-fluid">      
+            
+            <div class="row pt-2">
+                
+                
+                <div class="col-12 col-md-4">
+                    
+                    <h5 class="mb-4 display-5 text-start">Approposito di noi</h5>
+                    <p class="text-center">Voglio andare dove mi va<br>
+                        E non fermarmi qua<br>
+                        Questo viaggio mi porterà<br>              
+                        Da tutti i Pokémon<br>              
+                        Girovagando per il mondo<br>               
+                        La mia sfera lancerò<br>               
+                        Ed ogni Pokémon così catturerò! Oh oh!</p>
+                        
+                    </div>
+                    
+                    <div class="col-12 col-md-5 text-center">
+                        <h3 class="text-bordeux mb-3 pb-3 display-5">Quick Menù</h3>
+                        <ul class="nav flex-column">
+                            
+                            <li class="nav-item mb-3"><a href="./index.html/#categorie" class="nav-link p-0 text-dark">Categorie</a></li>
+                            <li class="nav-item mb-3"><a href="./index.html/#statistiche" class="nav-link p-0 text-dark">Dicono di Noi</a></li>              
+                            <li class="nav-item mb-3"><a href="./index.html/#recensione" class="nav-link p-0 text-dark">Recensioni</a></li>              
+                            <li class="nav-item mb-3"><a href="./index.html/#spedizioni" class="nav-link p-0 text-dark">Spedizioni</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 text-end">
+                        <h3 class="text-bordeux mb-3 pb-3 display-5">Contatti</h3>
+                        <ul class="fa-ul">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">PikiWiki, 94758, PokèLandia</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@mail.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+39 339 283 7398</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-12 col-md-6">
+                        
+                        <h5 class="py-2 my-3 display-5">Cerca Prodotti</h5>
+                        
+                        <div class="form-outline">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
+                                <button class="btn-cus2" type="submit">Cerca</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-12 col-md-6">
+                        
+                        <h5 class="display-5 py-2 my-3">Newsletter</h5>            
+                        <div class="form-outline">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Cerca prodotti" aria-label="Search">
+                                <button class="btn-cus2" type="submit">Iscriviti</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                </div>  
+                
+                <div class="row mt-3 ">
+                    <div class="col-12 col-md-6  d-flex justify-content-center align-items-center">
+                        <div class="mt-4">
+                            <p>© 2023 Company, Inc. All rights reserved.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="mt-4">
+                            
+                            <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-facebook-f"></i></a>                
+                            <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-twitter"></i></a>                
+                            <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>     
+                
+            </footer>
+            
+            
+            <!--Bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+            
+            <!--JavaScript-->
+            <script src="./annunci.js"></script>
+            
+        </body>
+        </html>
