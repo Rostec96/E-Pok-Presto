@@ -6,9 +6,16 @@ let logoA = document.querySelector(`#logoA`);
 
 let logoB = document.querySelector(`#logoB`);
 
-let check = false;
+
 
 let confirm = false;
+
+let movedDivs = document.querySelectorAll(`.moved`);
+
+let opener = document.querySelector(`.opener`);
+
+let cartaWrapper = document.querySelector(`#cartaWrapper`);
+
 
 navIcon.addEventListener(`click`, ()=>{
     
@@ -38,4 +45,62 @@ window.addEventListener(`scroll`, ()=>{
         navIcon.style.color = `var(--bordeux)`
     }
     
+});
+
+let authors = [
+        {name:`Emolga`, skill:[`Elettricità, Arrampicata`], url:`./media/Emolga.png`},
+        {name:`Pikachu`, skill:[`TuonoShock, Dolcezza`], url:`./media/Pikachu.png`},
+        {name:`Eevee`, skill:[`Carineria, Fuoco, Velocità`], url:`./media/Eevee.png`},
+        {name:`Grookey`, skill:[`Foglielama, Megassorbimento, Lealtà`], url:`./media/Grookey.png`},
+];
+
+movedDivs.forEach((moved, i)=>{
+        moved.style.backgroundImage = `url("${authors[i].url}")`;
+
+        moved.addEventListener(`click`, ()=>{
+            cartaWrapper.innerHTML = ``;
+
+            let divisore = document.createElement(`div`);
+
+            divisore.classList.add(`authorsCard`,`text-bordeux`);
+            divisore.innerHTML = `
+                        <h3 class="display-2">${authors[i].name}</h3>
+                        <p class="fw-bold">${authors[i].skill}</p>
+            `;
+
+            cartaWrapper.appendChild(divisore);
+
+            let cartaAuthors = document.querySelector(`.authorsCard`);
+
+            cartaAuthors.style.backgroundImage = `url(${authors[i].url})`;
+
+        });
+});
+
+opener.addEventListener(`click`, ()=>{
+
+    if (confirm == false) {
+        confirm = true;
+
+        opener.style.transform = `rotate(360deg)`;
+
+        movedDivs.forEach((moved, i)=>{
+            let angle = (360*i) / movedDivs.length;
+            moved.style.transform = `rotate(${angle}deg) translate(150px) rotate(-${angle}deg)`;
+        });
+    } else {
+
+        opener.style.transform = `rotate(0deg)`;
+
+        cartaWrapper.innerHTML = ``;
+
+        movedDivs.forEach((moved)=>{
+       
+            moved.style.transform = `rotate(0deg) translate(0px)`;
+        });
+         
+        confirm = false;
+        
+    }
+
 });

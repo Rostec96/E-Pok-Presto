@@ -6,8 +6,6 @@ let logoA = document.querySelector(`#logoA`);
 
 let logoB = document.querySelector(`#logoB`);
 
-let check = false;
-
 let confirm = false;
 
 navIcon.addEventListener(`click`, ()=>{
@@ -22,6 +20,9 @@ navIcon.addEventListener(`click`, ()=>{
     
 });
 
+let scroller = document.querySelector(`#scroller`);
+
+
 window.addEventListener(`scroll`, ()=>{
     
     if(window.scrollY > 0){
@@ -29,13 +30,17 @@ window.addEventListener(`scroll`, ()=>{
         navbar.style.padding = `10px`;
         logoA.classList.add(`d-none`);
         logoB.classList.remove(`d-none`);
-        navIcon.style.color = `var(--autunno)`
+        navIcon.style.color = `var(--autunno)`;
+        scroller.classList.remove(`d-none`);
+
     } else {
         navbar.style.backgroundColor =`rgba(246, 189, 96, 0.733)`;
         navbar.style.padding = `0px`;
         logoB.classList.add(`d-none`);
         logoA.classList.remove(`d-none`);
-        navIcon.style.color = `var(--bordeux)`
+        navIcon.style.color = `var(--bordeux)`;
+        scroller.classList.add(`d-none`);
+
     }
     
 });
@@ -92,32 +97,36 @@ fetch(`./annunci.json`).then((response)=> response.json()).then((data)=>{
             div.innerHTML = `
                 <div class="announcement-card text-center">
                 <div class="card-head">
-                    <img class="img-card-Cus" src="https://lorempokemon.fakerapi.it/pokemon/${200+1}" alt="">
+                    <img class="img-card-Cus" src="https://lorempokemon.fakerapi.it/pokemon/200/${i*50}">
                     <h4>${annuncio.name}</h4>
                     <h5>${annuncio.category}</h5>
                     <p class="fw-bold">${annuncio.price} £</p>
                 </div>
             `;
-            
+        
             cardsWrapper.appendChild(div);
             
-        });
+        })
         
     }
 
     showCards(data);
 
 
-    function filterByCategory(categoria) {
+    function filterByCategory(array) {
+
+        let arrayFromNodeList = Array.from(checkInputs);
+
+        let buttonChecked = arrayFromNodeList.find((bottone)=> bottone.checked);
+
+        let categoria = buttonChecked.id;
 
         if (categoria != `allShop`) {
-            let filtered = data.filter((annuncio)=>{
-                return annuncio.category == categoria;
-            });
+            let filtered = array.filter((annuncio)=>annuncio.category == categoria);
             
-            showCards(filtered);
+            return filtered;
         } else {
-            showCards(data);
+            return data;
         }
         
     }
@@ -126,11 +135,11 @@ fetch(`./annunci.json`).then((response)=> response.json()).then((data)=>{
 
     checkInputs.forEach((radio)=>{
         radio.addEventListener(`click`, ()=>{
-            filterByCategory(radio.id);
+            globalFilter();
         })
     })
 
-    let priceInput =document.querySelector(`#priceInput`);
+    let priceInput = document.querySelector(`#priceInput`);
 
     let incrementNumber = document.querySelector(`#incrementNumber`);
 
@@ -149,32 +158,47 @@ fetch(`./annunci.json`).then((response)=> response.json()).then((data)=>{
 
     setPriceInput();
 
-    function filterByPrice(prezzo) {
-        let filtered = data.filter((annuncio)=> Number(annuncio.price <= prezzo));
+    function filterByPrice(array) {
+        let filtered = array.filter((annuncio)=> Number(annuncio.price <= priceInput.value));
 
-        showCards(filtered);
+        return filtered;
         
     }
 
     priceInput.addEventListener(`input`, ()=>{
-        filterByPrice(Number(priceInput.value));
+        
 
         incrementNumber.innerHTML = priceInput.value;
+
+        globalFilter();
     });
 
     let wordInput = document.querySelector(`#wordInput`);
 
-    function filterByWord(nome) {
-        let filtered = data.filter((annuncio)=> annuncio.name.toLowerCase().includes(nome.toLowerCase()));
+    function filterByWord(array) {
 
-        showCards(filtered);
+        let nome = wordInput.value;
+        let filtered = array.filter((annuncio)=> annuncio.name.toLowerCase().includes(nome.toLowerCase()));
 
-        
+        return filtered;
+
     }
 
     wordInput.addEventListener(`input`, ()=>{
-        filterByWord(wordInput.value);
+        globalFilter();
     });
+
+    function globalFilter() {
+
+        let filteredByCategory = filterByCategory(data);
+        let filteredByPrice = filterByPrice(filteredByCategory);
+        let filteredByWord = filterByWord(filteredByPrice);
+
+        showCards(filteredByWord);
+        
+    }
+
+    globalFilter();
 
 });
 

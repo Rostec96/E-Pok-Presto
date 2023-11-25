@@ -277,7 +277,7 @@ h3,h4,h5{
   .card-head{
     margin-bottom: 10px;
     border-radius: 20px;
-    border: 8px double var(--bordeux);
+    border: 3px dashed var(--autunno);
     color: var(--bordeux);
 
   }
@@ -285,4 +285,70 @@ h3,h4,h5{
   .img-card-Cus{
     height: 100px;
     border-radius: 50px;
+    border: 2px double var(--autunno);
+    margin-top: 4px;
   }
+
+/*chi siamo*/
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 10px double var(--cipria);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opener{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 10px double var(--autunno);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--light);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.moved{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 10px double var(--cipria);
+    position: absolute;
+
+    background-image: url(./media/Emolga.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bordeux);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.authorsCard{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    border: 10px double var(--bordeux);
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--cipria);
+}
+
